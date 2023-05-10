@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Table(name = "person")
 public class Person {
     @Id
-    private int person_id;
+    private int id;
 
     @Column(name = "name")
     @NotEmpty(message = "Name should not be empty!")
@@ -26,8 +26,8 @@ public class Person {
     @Min(value = 1990, message = "Enter your true date of birth")
     private int  yearOfBirth;
 
-    public Person(int person_id, String name, int yearOfBirth) {
-        this.person_id = person_id;
+    public Person(int id, String name, int yearOfBirth) {
+        this.id = id;
         this.name = name;
         this.yearOfBirth = yearOfBirth;
     }
@@ -37,12 +37,12 @@ public class Person {
 
     }
 
-    public int getPerson_id() {
-        return person_id;
+    public int getId() {
+        return id;
     }
 
-    public void setPerson_id(int id) {
-        this.person_id = id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
