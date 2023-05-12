@@ -1,6 +1,5 @@
-package ua.zhabskyi.springcourse.config;
+package dmytro.zhabskyi.library.config;
 
-import dmytro.zhabskyi.library.config.SpringConfig;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.ServletException;
 import org.springframework.web.filter.HiddenHttpMethodFilter;

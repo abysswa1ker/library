@@ -9,9 +9,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5ba776-4746-40dc-8e61-5702509a3ba6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="9d5ba776-4746-40dc-8e61-5702509a3ba6" name="Changes" comment="rename person_id to id for the whole project">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/dao/BookDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8d7c9cf8-1f3e-4f0f-9f3c-e5978b4acde3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8d7c9cf8-1f3e-4f0f-9f3c-e5978b4acde3/storage_v2/_src_/database/library.uyToCQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8d7c9cf8-1f3e-4f0f-9f3c-e5978b4acde3/storage_v2/_src_/database/library.uyToCQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8d7c9cf8-1f3e-4f0f-9f3c-e5978b4acde3/storage_v2/_src_/database/library.uyToCQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/8d7c9cf8-1f3e-4f0f-9f3c-e5978b4acde3/storage_v2/_src_/database/library.uyToCQ/schema/public.abK9xQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/config/MySpringMvcDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/config/MySpringMvcDispatcherServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/controllers/BooksController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/controllers/BooksController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/dao/PersonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/models/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/util/PersonValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dmytro/zhabskyi/library/util/PersonValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -59,24 +83,32 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/zabsk/Курсы/java material for learning/Spring/Spring Framework/курс Spring/Repository/SpringCourse/library/src/main/webapp/WEB-INF/views/books",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "database.query.execution",
     "spring.configuration.checksum": "d521f765a49c72507257a2620612ee96",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "PostgreSQL"
     ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="dmytro.zhabskyi.library.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zabsk\Курсы\java material for learning\Spring\Spring Framework\курс Spring\Repository\SpringCourse\library\src\main\webapp\WEB-INF\views\books" />
+      <recent name="C:\Users\zabsk\Курсы\java material for learning\Spring\06_Spring Framework\Полный крус Spring\Repository\SpringCourse\library\src\main\webapp\WEB-INF\views\books" />
     </key>
   </component>
   <component name="RunManager">
@@ -194,6 +226,14 @@
       <workItem from="1683616672865" duration="5375000" />
       <workItem from="1683657374880" duration="1724000" />
       <workItem from="1683697988529" duration="9224000" />
+      <workItem from="1683739234991" duration="1945000" />
+      <workItem from="1683741196548" duration="623000" />
+      <workItem from="1683741841939" duration="506000" />
+      <workItem from="1683742357851" duration="2656000" />
+      <workItem from="1683798337968" duration="4259000" />
+      <workItem from="1683802752692" duration="6286000" />
+      <workItem from="1683823939134" duration="2838000" />
+      <workItem from="1683827147269" duration="4958000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1683623966187</created>

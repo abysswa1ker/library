@@ -2,12 +2,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>Library</title>
 </head>
 <body>
 <h1><%= "Welcome to library" %>
 </h1>
 
 <a href="/people">List of people</a>
+<a href="/books">List of books</a>
 </body>
 </html>

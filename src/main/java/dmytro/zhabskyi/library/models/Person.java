@@ -5,30 +5,21 @@ import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "person")
 public class Person {
-    @Id
     private int id;
 
-    @Column(name = "name")
     @NotEmpty(message = "Name should not be empty!")
     @Size(min=2, max = 30, message = "Name must have more characters!")
     @Pattern(regexp = "[A-Z]\\w+ [A-Z]\\w+ [A-Z]\\w+", message = "Enter your full name!")
-    private String name;
+    private String fullName;
 
-    @Column(name = "year_of_birth")
+
     @Min(value = 1990, message = "Enter your true date of birth")
     private int  yearOfBirth;
 
-    public Person(int id, String name, int yearOfBirth) {
+    public Person(int id, String fullName, int yearOfBirth) {
         this.id = id;
-        this.name = name;
+        this.fullName = fullName;
         this.yearOfBirth = yearOfBirth;
     }
 
@@ -45,12 +36,12 @@ public class Person {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public int getYearOfBirth() {

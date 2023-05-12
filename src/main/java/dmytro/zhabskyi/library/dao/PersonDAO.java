@@ -31,18 +31,18 @@ public class PersonDAO {
     }
 
     public Optional<Person> getPersonByFullName(String name) {
-        return jdbcTemplate.query("SELECT * FROM Person WHERE name=?", new Object[]{name},
+        return jdbcTemplate.query("SELECT * FROM Person WHERE full_name=?", new Object[]{name},
                 new BeanPropertyRowMapper<>(Person.class)).stream().findAny();
     }
 
     public void save(Person person){
-          jdbcTemplate.update("INSERT INTO Person(name, year_of_birth) VALUES (?, ?)",
-                  person.getName(), person.getYearOfBirth());
+          jdbcTemplate.update("INSERT INTO Person(full_name, year_of_birth) VALUES (?, ?)",
+                  person.getFullName(), person.getYearOfBirth());
     }
 
     public void update(int id, Person updatedPerson){
-        jdbcTemplate.update("UPDATE Person SET name = ?, year_of_birth = ? WHERE id=?",
-                updatedPerson.getName(), updatedPerson.getYearOfBirth(), id);
+        jdbcTemplate.update("UPDATE Person SET full_name = ?, year_of_birth = ? WHERE id=?",
+                updatedPerson.getFullName(), updatedPerson.getYearOfBirth(), id);
     }
 
     public void delete(int id) {
